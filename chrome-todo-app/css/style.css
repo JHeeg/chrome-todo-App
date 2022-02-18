@@ -1,0 +1,153 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+.hidden {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 40px 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+/* background */
+img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* contents */
+#contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  min-height: 400px;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 6px;
+}
+
+/* clock */
+#clock {
+  margin: 30px;
+  font-size: 140px;
+  color: #fff;
+  text-align: center;
+}
+
+/* login */
+h1 {
+  margin: 0;
+}
+#login-form {
+  text-align: center;
+}
+#login-form input {
+  height: 34px;
+  padding: 0 10px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  line-height: 26px;
+  outline: none;
+  background-color: transparent;
+}
+#login-form input:first-child {
+  /* border-bottom: 1px solid #eee; */
+  background-color: rgba(255, 255, 255, .4);
+}
+#login-form input:last-child:hover {
+  border-radius: 4px;
+  color: #ddd;
+  cursor: pointer;
+}
+#login-form input:first-child::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #222;
+}
+#greeting {
+  color: #fff;
+  text-align: center;
+}
+
+/* todo */
+#todo-form {
+  text-align: center;
+}
+#todo-form h3 {
+  margin: 10px 0;
+  color: #fff;
+}
+#todo-form h3 span {
+  color: greenyellow;
+}
+#todo-form input {
+  width: 300px;
+  height: 34px;
+  padding: 0 10px;
+  border: none;
+  border-bottom: 1px dashed #fff;
+  background-color: transparent;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 26px;
+  outline: none;
+}
+#todo-form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#todo-list {
+  height: 100%;
+  width: 200px;
+  padding-left: 40px;
+  color: #fff;
+}
+#todo-list li {
+  height: 28px;
+}
+#todo-list li button {
+  border: none;
+  background-color: transparent;
+  font-size: 10px;
+}
+#todo-list li button:hover {
+  cursor: pointer;
+}
+
+/* quotes */
+#quote {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+#quote span {
+  display: block;
+}
+
+/* weather */
+#weather {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 20px;
+  font-size: 12px;
+  color: #fff;
+}
